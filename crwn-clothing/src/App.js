@@ -1,9 +1,7 @@
-import CategoriesBody from "./components/categories/CategoryBody/categories-module.component";
+import Home from "./routes/home/home.component";
 
 function App() {
-  return (
-   <CategoriesBody />
-  );
+  return <Home />
 }
 
 export default App;
