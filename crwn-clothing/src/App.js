@@ -1,38 +1,41 @@
 import './App.css';
+import { SHOP_NOW } from './utils/utils';
 
 function App() {
+
+  const categories = [
+    {
+      title:'Hats',
+      id:1,
+    },
+    {
+      title:'Jackets',
+      id:2,
+    },
+    {
+      title:'Sneakers',
+      id:3,
+    },
+    {
+      title:'Womens',
+      id:4,
+    },
+    {
+      title:'Mens',
+      id:5,
+    },
+  ]
+
   return (
     <div className='categories-container'> 
-      <div className='category-container'>
-        <div className='category-body-container'>
-          <h2> Hats </h2>
-          <p> shop now </p>
+      {categories.map((item) => (
+        <div className='category-container'>
+          <div className='category-body-container'>
+            <h2> {item.title} </h2>
+            <p> {SHOP_NOW} </p>
+          </div>
         </div>
-      </div>
-      <div className='category-container'>
-        <div className='category-body-container'>
-          <h2> Jackets </h2>
-          <p> shop now </p>
-        </div>
-      </div>
-      <div className='category-container'>
-        <div className='category-body-container'>
-          <h2> Sneakers </h2>
-          <p> shop now </p>
-        </div>
-      </div>
-      <div className='category-container'>
-        <div className='category-body-container'>
-          <h2> Womens </h2>
-          <p> shop now </p>
-        </div>
-      </div>
-      <div className='category-container'>
-        <div className='category-body-container'>
-          <h2> Mens </h2>
-          <p> shop now </p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }
