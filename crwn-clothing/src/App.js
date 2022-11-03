@@ -1,45 +1,8 @@
-import './App.css';
-import { SHOP_NOW } from './utils/utils';
-
-
+import CategoriesBody from "./components/categories/categories-module.component";
 
 function App() {
-
-  const categories = [
-    {
-      title:'Hats',
-      id:1,
-    },
-    {
-      title:'Jackets',
-      id:2,
-    },
-    {
-      title:'Sneakers',
-      id:3,
-    },
-    {
-      title:'Womens',
-      id:4,
-    },
-    {
-      title:'Mens',
-      id:5,
-    },
-  ]
-
   return (
-    <div className='categories-container'> 
-      {categories.map((item) => (
-        <div className='category-container'>
-          <div className='background-image' />
-          <div className='category-body-container'>
-            <h2> {item.title} </h2>
-            <p> {SHOP_NOW} </p>
-          </div>
-        </div>
-      ))}
-    </div>
+   <CategoriesBody />
   );
 }
 
