@@ -1,6 +1,6 @@
 import './categories-module.styles.scss';
-import categories from '../utils/categories-info.json'
-import CategoryItem from './category-item.component';
+import categories from '../../utils/categories-info.json'
+import CategoryItem from '../CategoryItem/category-item.component';
 
 const CategoriesBody = () => {
     return (

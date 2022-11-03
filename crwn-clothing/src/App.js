@@ -1,4 +1,4 @@
-import CategoriesBody from "./components/categories/categories-module.component";
+import CategoriesBody from "./components/categories/CategoryBody/categories-module.component";
 
 function App() {
   return (

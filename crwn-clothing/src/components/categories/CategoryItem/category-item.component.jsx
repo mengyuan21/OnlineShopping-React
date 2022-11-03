@@ -1,5 +1,5 @@
 import './category-item.styles.scss';
-import { SHOP_NOW } from '../utils/utils-description';
+import { SHOP_NOW } from '../../utils/utils-description';
 
 
 const CategoryItem = ({category}) => {
@@ -12,10 +12,10 @@ const CategoryItem = ({category}) => {
                 backgroundImage: `url(${imageUrl})`}
               } 
             />
-          <div className='category-body-container'>
-            <h2> {title} </h2>
-            <p> {SHOP_NOW} </p>
-          </div>
+            <div className='category-body-container'>
+                <h2> {title} </h2>
+                <p> {SHOP_NOW} </p>
+            </div>
         </div>
     )
 }
