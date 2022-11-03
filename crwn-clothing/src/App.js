@@ -1,6 +1,8 @@
 import './App.css';
 import { SHOP_NOW } from './utils/utils';
 
+
+
 function App() {
 
   const categories = [
@@ -30,6 +32,7 @@ function App() {
     <div className='categories-container'> 
       {categories.map((item) => (
         <div className='category-container'>
+          <div className='background-image' />
           <div className='category-body-container'>
             <h2> {item.title} </h2>
             <p> {SHOP_NOW} </p>
